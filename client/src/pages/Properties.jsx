@@ -14,7 +14,7 @@ export default function Properties() {
       setLoading(true);
 
       const res = await axios.get(
-        "http://localhost:5000/api/properties"
+        "https://propertyease-wgli.onrender.com/api/properties"
       );
 
       setProperties(res.data);
@@ -36,7 +36,7 @@ export default function Properties() {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/properties/${id}`,
+        `https://propertyease-wgli.onrender.com/api/properties/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
