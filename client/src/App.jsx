@@ -22,7 +22,7 @@ function App() {
     </ProtectedRoute>
   }
 />
-      <Route path="/add-property" element={<AddProperty />} />
+      <Route path="/add-property" element={<Addproperty />} />
       <Route path="/properties" element={<Properties />} />
       <Route path="/profile" element={<Profile />} />
     </Routes>
