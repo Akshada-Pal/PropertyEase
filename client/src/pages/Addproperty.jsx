@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-export default function AddProperty() {
+export default function Addproperty() {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
