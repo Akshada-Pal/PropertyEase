@@ -25,7 +25,7 @@ export default function Addproperty() {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        "http://localhost:5000/api/properties/add",
+        "https://propertyease-wgli.onrender.com/api/properties/add",
         formData,
         {
           headers: {
