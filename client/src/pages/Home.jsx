@@ -52,45 +52,49 @@ export default function Home() {
     },
   ];
 
-  return (
-    <div className="bg-gradient-to-b from-slate-50 via-blue-50 to-purple-50 text-gray-800">
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-gray-200">
-  <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+return (
+  <div className="bg-gradient-to-b from-slate-50 via-blue-50 to-purple-50 text-gray-800">
+    
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-gray-200">
+      
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-3 md:px-6 py-3">
 
-    {/* BRAND */}
-    <h1 className="text-2xl font-extrabold tracking-tight text-indigo-700">
-      Property<span className="text-gray-900">Ease</span>
-    </h1>
+        {/* BRAND */}
+        <h1 className="text-lg md:text-2xl font-extrabold tracking-tight text-indigo-700 whitespace-nowrap">
+          Property<span className="text-gray-900">Ease</span>
+        </h1>
 
-    {/* LINKS */}
-    <div className="flex items-center gap-8 text-sm font-medium">
+        {/* LINKS (UPDATED RESPONSIVE ONLY) */}
+        <div className="flex items-center gap-3 md:gap-8 text-[11px] sm:text-xs md:text-sm font-medium whitespace-nowrap">
 
-      <Link
-        to="/properties"
-        className="text-gray-600 hover:text-indigo-600 transition relative group"
-      >
-        Properties
-        <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all"></span>
-      </Link>
+          <Link
+            to="/properties"
+            className="text-gray-600 hover:text-indigo-600 transition relative group"
+          >
+            Properties
+            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all"></span>
+          </Link>
 
-      <Link
-        to="/login"
-        className="text-gray-600 hover:text-indigo-600 transition"
-      >
-        Login
-      </Link>
+          <Link
+            to="/login"
+            className="text-gray-600 hover:text-indigo-600 transition"
+          >
+            Login
+          </Link>
 
-      <Link
-        to="/register"
-        className="bg-indigo-600 text-white px-5 py-2 rounded-xl shadow-md
-        hover:bg-indigo-700 hover:shadow-lg transition transform hover:-translate-y-0.5"
-      >
-        Get Started
-      </Link>
+          <Link
+            to="/register"
+            className="bg-indigo-600 text-white px-2 md:px-5 py-1 md:py-2 rounded-lg md:rounded-xl shadow-md
+            hover:bg-indigo-700 hover:shadow-lg transition transform hover:-translate-y-0.5 text-[10px] sm:text-xs md:text-sm"
+          >
+            Get Started
+          </Link>
 
-    </div>
-  </div>
-</nav>
+        </div>
+
+      </div>
+    </nav>
+
 
       {/* HERO SECTION (FIXED SLIDER BACKGROUND) */}
       {/* HERO SECTION (RESPONSIVE UPGRADE) */}
