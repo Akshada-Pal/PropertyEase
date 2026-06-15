@@ -20,7 +20,7 @@ export default function Dashboard() {
         setLoading(true);
 
         const res = await axios.get(
-          "http://localhost:5000/api/properties",
+          "https://propertyease-wgli.onrender.com/api/properties",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
