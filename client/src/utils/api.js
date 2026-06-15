@@ -1,7 +1,17 @@
+// import axios from "axios";
+
+// const API = axios.create({
+//   baseURL: "http://localhost:5000/api/users",
+// });
+
+// export default API;
+
+
+//My backend url---
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/users",
+  baseURL: "https://propertyease-wgli.onrender.com/api/users",
 });
 
 export default API;
